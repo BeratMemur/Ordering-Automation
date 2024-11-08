@@ -6,12 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static "css/style.css" %}">
-    <title>Ürünler</title>
+    {% block css_files %}{% endblock css_files %}
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     {% include "partials/_nav.html" %}
     <div class="container">
-        
+        <div class="row">
+            <div class="col-3">
+                {% block content %}{% endblock %}
+            </div>
+            <div class="col-9">
+                {% block content2 %}{% endblock %}
+            </div>
+        </div>
     </div>
 </body>
 </html>

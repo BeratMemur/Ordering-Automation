@@ -12,6 +12,28 @@
     margin-inline: 125px;
 }
 
+.col-3 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: auto;
+}
+
+.col-9 {
+    float: left;
+    width: 75%;
+    padding: 10px;
+    height: auto;
+
+}
+
+.col-12 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
 .navcontainer {
     padding: 45px;
     margin: 3px;
@@ -35,7 +57,7 @@
 
 body {
     min-height: 100vh;
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(231, 231, 231);
 }
 
 .logo {
@@ -46,7 +68,6 @@ body {
 }
 
 .navbar {
-    
     font-size: 18px;
     color: #fff;
     font-weight: 500;
@@ -79,7 +100,52 @@ body {
     width: 100%;
 }
 
-.col2 {
+.list {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    background: #fff;
+    border-radius: 15px;
     float: left;
-    width: 50px;
 }
+
+.list-item {
+    width: 100%;
+    float: left;
+    height: auto;
+    border: 1px solid #ddd;
+    background-color: rgb(18, 161, 243);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.list-item:hover {
+    background-color: rgb(16, 127, 190);
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+}
+

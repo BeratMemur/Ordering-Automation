@@ -1,0 +1,13 @@
+{% load static %}
+
+{% block css_files %} <link rel="stylesheet" href="{% static "products/css/style.css" %}"> {% endblock %}
+
+<div class="card">
+    <img src="{% static "products/img/"|add:p.image %}" alt="{{ p.name }}" style="width:100%">
+    <div class="card_container">
+        <div>
+            <h4><b>{{ p.name }}</b></h4>
+            <p>{{ p.price }} TL</p>
+        </div>
+    </div>
+</div>
