@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block title %} {{ product.name }} {% endblock %}
+{% block css_files %} <link rel="stylesheet" href="{% static "products/css/style.css" %}"> {% endblock %}
+
+{% block content %}
+    <div class="col-12">
+        <div class="list">
+            <div>
+                <img class="detail-page-img" src="{% static "products/img/"|add:product.image %}" alt="{{ product.name }}">
+            </div>
+            <div style="margin-top:10px;">
+                <h3>{{ product.name }}</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur molestias repellat consequatur amet omnis autem doloremque neque qui libero facilis eveniet animi architecto labore consectetur ut nihil, tempora dolores eius quod, voluptate assumenda eaque! Sapiente debitis deleniti maiores modi aliquid suscipit voluptate recusandae nesciunt corporis! Velit, exercitationem? Similique, consequatur ipsum!</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

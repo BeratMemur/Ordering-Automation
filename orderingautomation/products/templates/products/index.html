@@ -6,19 +6,23 @@
 {% block css_files %} <link rel="stylesheet" href="{% static "products/css/style.css" %}"> {% endblock %}
 
 {% block content %}
-    <div class="list">
-        <ul>
-            <a href="#" class="list-item">Yemekler</a>
-            <a href="#" class="list-item">Dürümler</a>
-            <a href="#" class="list-item">İçecekler</a>
-        </ul>
+    <div class="col-3">
+        <div class="list">
+            {% for c in category %}
+                <ul>
+                    <a href="{% url "products_details_by_category" c.slug %}" class={% if activeCategory == c.slug %} "list-item-active" {% else %}"list-item"{% endif %}>{{c.name}}</a>
+                </ul>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
 
 {% block content2 %}
-    <div class="list">
-        {% for p in product %}
-            {% include "products/partials/product.html" %}
-        {% endfor %}
+    <div class="col-9">
+        <div class="list">
+            {% for p in product %}
+                {% include "products/partials/product.html" %}
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}

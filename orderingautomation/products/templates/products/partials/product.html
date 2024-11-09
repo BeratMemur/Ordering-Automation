@@ -3,7 +3,19 @@
 {% block css_files %} <link rel="stylesheet" href="{% static "products/css/style.css" %}"> {% endblock %}
 
 <div class="card">
+    {% if p.isActive == 1 %}
+        <div class="circle-active"><b>Aktif</b></div>
+    {% else %}
+        <div class="circle-passive"><b>Aktif Değil</b></div>
+    {% endif %}
     <img src="{% static "products/img/"|add:p.image %}" alt="{{ p.name }}" style="width:100%">
+    
+    <div class="bt">
+        <button class="btn">
+            <a href="{% url "product_details" p.slug %}">Düzenle</a>
+        </button>
+    </div>
+    
     <div class="card_container">
         <div>
             <h4><b>{{ p.name }}</b></h4>

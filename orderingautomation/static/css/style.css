@@ -114,21 +114,31 @@ body {
     width: 100%;
     float: left;
     height: auto;
-    border: 1px solid #ddd;
-    background-color: rgb(18, 161, 243);
-    padding: 15px;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
     border-radius: 10px;
-    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.list-item-active {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-color: rgb(45, 160, 226);
+    padding: 10px;
+    border-radius: 10px;
     text-decoration: none;
     color: #fff;
-    font-size: larger;
-    font-weight: 500;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .list-item:hover {
-    background-color: rgb(16, 127, 190);
+    background-color: rgb(45, 160, 226);
+    color: #fff;
 }
 
 .row::after {
