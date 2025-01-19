@@ -7,7 +7,7 @@
 
 {% block content %}
     <div class="col-3">
-        <div class="left-list">
+        <div class="list">
             <a class="list-item" href="/urunler">Tümü</a>
             {% for c in category %}
                 <ul>
@@ -20,17 +20,19 @@
 
 {% block content2 %}
     <div class="col-9">
-        <div class="t-list">
-                <form class="d-flex" action="{% url "search" %}">
-                    <input class="search" type="text" name="q" placeholder="Ürün Ara">
-                    <button type="submit" class="s-btn">Ara</button>
-                </form>
+        <div class="list">
+            <form class="d-flex" action="{% url "search" %}">
+                <input class="search" type="text" name="q" placeholder="Ürün Ara">
+                <button type="submit" class="s-btn">Ara</button>
+            </form>
         </div>
+    </div>
+    <div class="col-9">
         <div class="list">
             {% if product|length == 0 %}
                 <div class="alert-warning">Ürün Blunumadı</div>
             {% endif %}
-
+            
             {% for p in product %}
                 {% include "products/partials/product.html" %}
             {% endfor %}

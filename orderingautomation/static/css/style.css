@@ -110,6 +110,28 @@ body {
     float: left;
 }
 
+.left-list {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 20%;
+    padding: 10px;
+    height: auto;
+    background: #fff;
+    border-radius: 15px;
+    float: left;
+    position: fixed;
+}
+
+.t-list {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background: #fff;
+    border-radius: 15px;
+    float: left;
+    margin-bottom: 10px;
+}
+
 .list-item {
     width: 100%;
     float: left;
@@ -159,3 +181,101 @@ body {
     }
 }
 
+.list input[type=text] {
+    padding: 3px;
+    margin: 5px;
+}
+
+.search {
+    border: none;
+    padding: 5px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(231, 231, 231);
+    font-size: 17px;
+}
+
+.s-btn {
+    font-size: 17px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    background-color: rgb(18, 161, 243);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+}
+
+.s-btn:hover {
+    background-color: rgb(12, 140, 214);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search::placeholder {
+    color: #000000;
+    font-size: 17px;
+    opacity: 40%;
+    padding: 5px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.alert-warning {
+    width: auto;
+    background-color: rgba(255, 231, 123, 0.5);
+    color: rgb(131, 122, 0);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 3px;
+}
+
+.alert-danger {
+    width: auto;
+    background-color: rgba(255, 123, 123, 0.5);
+    color: rgb(131, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 3px;
+}
+
+
+.mb-3 {
+    margin-bottom: 3px;
+}
+
+.menu {
+    width: 50%;
+    padding: 5px;
+    position: relative;
+    margin: auto;
+}
+
+input[type=file] {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+input::file-selector-button {
+    background-color: rgb(12, 140, 214);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    text-shadow: 0 1px 1px #333;
+  }
+
+input::file-selector-button:hover {
+    background-color: rgb(12, 106, 214);
+}
+
+.select-box {
+    padding: 10px;
+    height: auto;
+    background: #f1f1f1;
+    border-radius: 15px;
+}

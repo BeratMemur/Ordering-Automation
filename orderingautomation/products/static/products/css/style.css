@@ -8,7 +8,7 @@
     margin-bottom: 20px;
     border-radius: 7px;
     float: left;
-    height: 360px;
+    height: 375px;
 }
 
 .card:hover {
@@ -17,8 +17,10 @@
 
 .card_container {
     padding: 2px 16px;
+    margin-bottom: 10px;
     height: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .card img {
@@ -60,14 +62,9 @@
     margin-left: 7px;
 }
 
-.bt {
-    margin-left: 200px;
-    margin-top: 10px;
-    width: auto;
-    position: absolute;
-}
 
 .btn {
+    margin-top: 7px;
     font-size: 17px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -78,6 +75,7 @@
     border-radius: 10px;
     color: #fff;
     border: none;
+    float: right;
 }
 
 .btn a {
@@ -98,4 +96,54 @@
     float: left;
     margin: 5px;
     margin-right: 20px;
+}
+
+.form {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+
+.form-i {
+    border: 1px solid #ccc;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    width: 10%;
+    padding: 5px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
+}
+
+.form-c {
+    width: 15px;
+    height: 15px;
+    accent-color: #478ec9;
+}
+
+.label {
+    font-size: large;
+    padding: 5px;
+}
+
+.c-label {
+    font-size: medium;
+    padding: 3px;
+    display:inline-block;
+}
+
+.errorlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.invalid input, .invalid textarea {
+    border: 1px solid #dc3545;
 }
